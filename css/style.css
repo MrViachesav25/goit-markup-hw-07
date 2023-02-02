@@ -103,20 +103,6 @@ img {
     width: 1158px;
   }
 }
-/* Media for background-image */
-
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-  screen and (min-resolution: 192dpi) and (max-width: 767px),
-  screen and (min-resolution: 2dppx) and (max-width: 767px) {
-  .hero {
-    background-image: linear-gradient(
-        to bottom,
-        var(--third-dark-bg),
-        var(--third-dark-bg)
-      ),
-      url('../images/bg-picture/office-mobile@2x.jpg');
-  }
-}
 
 /* Media for mobile-menu */
 @media screen and (max-width: 767px) {
@@ -335,10 +321,23 @@ img {
       var(--third-dark-bg),
       var(--third-dark-bg)
     ),
-    url('../images/bg-picture/office-mobile.jpg');
+    url(../images/bg-picture/office-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(
+        to bottom,
+        var(--third-dark-bg),
+        var(--third-dark-bg)
+      ),
+      url(../images/bg-picture/office-mobile@2x.jpg);
+  }
 }
 
 .hero-title {
@@ -1118,21 +1117,21 @@ img {
         var(--third-dark-bg),
         var(--third-dark-bg)
       ),
-      url('../images/bg-picture/office-tablet.jpg');
+      url(../images/bg-picture/office-tablet.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .hero {
       background-image: linear-gradient(
           to bottom,
           var(--third-dark-bg),
           var(--third-dark-bg)
         ),
-        url('../images/bg-picture/office-tablet@2x.jpg');
+        url(../images/bg-picture/office-tablet@2x.jpg);
+    }
   }
-}
   .hero-title {
     max-width: 500px;
     margin-bottom: 40px;
@@ -1236,7 +1235,7 @@ img {
   .filter-btn {
     padding: 8px 16px;
   }
-  
+
   .portfolio-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1291,23 +1290,23 @@ img {
         var(--third-dark-bg),
         var(--third-dark-bg)
       ),
-      url('../images/bg-picture/office-desktop.jpg');
+      url(../images/bg-picture/office-desktop.jpg);
     padding-top: 192px;
     padding-bottom: 192px;
   }
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(
-        to bottom,
-        var(--third-dark-bg),
-        var(--third-dark-bg)
-      ),
-      url('../images/bg-picture/office-desktop@2x.jpg');
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to bottom,
+          var(--third-dark-bg),
+          var(--third-dark-bg)
+        ),
+        url(../images/bg-picture/office-desktop@2x.jpg);
+    }
   }
-}
 
   .hero-title {
     margin-bottom: 48px;
